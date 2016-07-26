@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import List from './components/List.js';
+import Cards from './components/Cards.js';
 
 class App extends React.Component {
   render(){
@@ -12,6 +13,7 @@ class App extends React.Component {
         <Header />
         <List />
         <Footer />
+        <Cards />
 
     </div>
     )
