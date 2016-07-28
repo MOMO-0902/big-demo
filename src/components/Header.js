@@ -1,31 +1,35 @@
 import React from 'react';
+import Icons from './Icon';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import Hamburger from './Hamburger';
 
 class Header extends React.Component {
-
+   getChildContext() {
+   return {muiTheme: getMuiTheme()};
+   }
   render(){
     let styles={
       root:{
         backgroundColor:'#2196F3',
         height:'300px',
+        position:'relative',
       },
-      h1:{
-        paddingLeft:'45%',
-        paddingTop:'100px',
-        color:'#fff',
-        fontSize:'40px'
-      },
-      icon:{
-        paddingLeft:'50px'
-      }
+    
+
+
     }
     return(
       <div style={styles.root}>
-        <h1 style={styles.h1}>ALL</h1>
 
+        <Icons />
+        <Hamburger />
 
       </div>
     )
   }
 }
+Header.childContextTypes = {
+  muiTheme: React.PropTypes.object.isRequired,
+};
 
 export default Header;

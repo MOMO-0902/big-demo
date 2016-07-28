@@ -45,7 +45,7 @@ class CardList extends Component{
 }
 CardList.propTypes = {
   title: React.PropTypes.string.isRequired,
-  index: React.PropTypes.number.isRequired,
+  index: React.PropTypes.string.isRequired,
   date: React.PropTypes.string.isRequired,
 };
 CardList.defaultProps = {

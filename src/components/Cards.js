@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
 
 import CardList from './CardList.js';
-
+import map from 'lodash/fp/map';
 let Cards = [
-  {title:'这是第一天',date:'2016.7.19'},
-  {title:'这是第二天',date:'2016.7.21'},
-  {title:'这是第三天',date:'2016.7.22'}
+  {index: '1', title:'这是第一天',date:'2016.7.19'},
+  {index: '2', title:'这是第二天',date:'2016.7.21'},
+  {index: '3', title:'这是第三天',date:'2016.7.22'}
 ]
 
 class Card extends Component {
   render(){
 
     var AllCards = [];
-    for (var i = 0; i < Cards.length; i++) {
-      let j=i+1;
+
+    map((b) => {
       AllCards.push(
-        <CardList title={Cards[i].title} date={Cards[i].date} index={j} key={i}/>
-      )
-    };
+          <CardList title={b.title} date={b.date} index={b.index} key={Math.random()}/>
+        );
+    },
+     Cards
+  );
 
     return(
       <div>
