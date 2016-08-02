@@ -1,62 +1,31 @@
 {
-  "name": "react-transform-boilerplate",
+  "name": "004-webpack-babel",
   "version": "1.0.0",
-  "description": "A new Webpack boilerplate with hot reloading React components, and error handling on module and component level.",
+  "description": "",
+  "main": "index.js",
   "scripts": {
+    "build": " ./node_modules/.bin/webpack",
     "start": "node devServer.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gaearon/react-transform-boilerplate.git"
-  },
-  "keywords": [
-    "react",
-    "reactjs",
-    "boilerplate",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack",
-    "babel",
-    "react-transform"
-  ],
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
-  "license": "CC0-1.0",
-  "bugs": {
-    "url": "https://github.com/gaearon/react-transform-boilerplate/issues"
-  },
-  "homepage": "https://github.com/gaearon/react-transform-boilerplate",
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "autoprefixer-loader": "^3.2.0",
-    "babel-core": "^6.6.5",
-    "babel-eslint": "^5.0.0-beta4",
+    "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-react": "^6.3.13",
-    "babel-preset-react-hmre": "^1.1.1",
-    "bootstrap": "^3.3.6",
-    "cross-env": "^1.0.7",
-    "css-loader": "^0.23.1",
-    "eslint": "^1.10.3",
-    "eslint-plugin-babel": "^3.0.0",
-    "eslint-plugin-react": "^3.11.3",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
     "eventsource-polyfill": "^0.9.6",
-    "express": "^4.13.3",
-    "file-loader": "^0.9.0",
-    "material-ui": "^0.15.2",
-    "react-tap-event-plugin": "^1.0.0",
-    "rimraf": "^2.4.3",
-    "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.12.9",
-    "webpack-dev-middleware": "^1.4.0",
-    "webpack-hot-middleware": "^2.9.1"
+    "express": "^4.14.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.1"
   },
   "dependencies": {
     "lodash": "^4.14.0",
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1"
+    "material-ui": "^0.15.2",
+    "react-tap-event-plugin": "^1.0.0"
   }
 }
