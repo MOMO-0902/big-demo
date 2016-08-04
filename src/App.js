@@ -4,7 +4,7 @@ import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 
 import Cards from './components/Cards.js';
-
+import Home from './components/Home.js'
 
 class App extends React.Component {
   render(){
@@ -13,7 +13,7 @@ class App extends React.Component {
       <div>
         <Header />
 
-
+        <Home />
         <Cards />
         <Footer />
     </div>
