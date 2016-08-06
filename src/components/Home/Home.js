@@ -6,7 +6,7 @@ class Home extends React.Component {
       root:{
         width:'100vw',
         height:'100vh',
-        background: 'url("http://7xopqp.com1.z0.glb.clouddn.com/newming24.jpg") no-repeat fixed center center/cover'
+        background: 'url("https://github.com/MOMO-0902/big-demo/blob/master/src/source/timg.jpg?raw=true") no-repeat fixed center center/cover'
       },
       title:{
         color:'#fff',
@@ -21,7 +21,7 @@ class Home extends React.Component {
       cover:{
         width:'100%',
         height:'100%',
-        backgroundColor:'rgba(0,0,0,0.7)'
+        backgroundColor:'rgba(0,0,0,0.3)'
       }
     }
     return(

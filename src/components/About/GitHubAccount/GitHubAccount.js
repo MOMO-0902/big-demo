@@ -53,9 +53,11 @@ class Account extends React.Component {
 
     return(
       <div className="content">
+        <div className="about">
        <Card>
         { this.state.wait ?  x : z}
        </Card>
+       </div>
       </div>
     )
   }
