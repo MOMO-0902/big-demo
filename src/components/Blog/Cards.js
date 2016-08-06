@@ -19,7 +19,8 @@ class Card extends Component {
     }
   }
   componentDidMount(){
-    axios.get(`https://raw.githubusercontent.com/happypeter/big-demo/master/posts/index.json`)
+    //use Math.random to avoid browser cache
+    axios.get(`https://raw.githubusercontent.com/MOMO-0902/big-demo/master/posts/index.json?v=${Math.random()}`)
          .then((arr) => {
             console.log(arr);
             this.setState({
