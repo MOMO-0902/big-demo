@@ -31,6 +31,10 @@ module.exports = {
       {
         test:/\.(png|jpe?g)$/,
         loader:'url?limit=8192'
+      },
+      {
+        test: /\.css$/,
+        loaders: ['style', 'css']
       }
     ]
   }

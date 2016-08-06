@@ -1,7 +1,7 @@
 import React from 'react';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
-
+import { Link } from 'react-router';
 
 export default class DrawerUndockedExample extends React.Component {
 
@@ -43,7 +43,33 @@ export default class DrawerUndockedExample extends React.Component {
         textAlign:'center',
         lineHeight:'50px'
 
+      },
+      smallIcon:{
+        width:'32px',
+        height:'32px'
+      },
+      small:{
+        position:'absolute',
+        top:'10px',
+        left:'10px',
+        width:'52px',
+        height:'52px',
+        padding:'10px'
+      },
+      link:{
+        textDecoration:'none',
+        display:'block',
+        color:'#333'
+      },
+      navTitle:{
+        color:'#fff',
+        lineHeight:'75px',
+        fontSize:'20px',
+        backgroundColor:'#00BCD4',
+        marginBottom:'10px',
+        marginTop: '0'
       }
+
     }
     return (
       <div>
@@ -55,10 +81,16 @@ export default class DrawerUndockedExample extends React.Component {
         >
           <p style={styles.h1}>好多视频网</p>
         <div style={styles.menu}>
-          <MenuItem onTouchTap={this.handleClose.bind(this)}>视频列表</MenuItem>
-          <MenuItem onTouchTap={this.handleClose.bind(this)}>关于</MenuItem>
-          <MenuItem onTouchTap={this.handleClose.bind(this)}>注册</MenuItem>
-          <MenuItem onTouchTap={this.handleClose.bind(this)}>登录</MenuItem>
+        <p style={styles.navTitle} onClick={this.handleClose.bind(this)}>MOMO-0902{this.state.title}</p>
+          <MenuItem onTouchTap={this.handleClose.bind(this)}>
+            <Link to="/" style={styles.link} activeStyle={{color: '#E91E63'}} onlyActiveOnIndex={true}>首页</Link>
+          </MenuItem>
+          <MenuItem onTouchTap={this.handleClose.bind(this)}>
+            <Link to="blog" style={styles.link} activeStyle={{color: '#E91E63'}}>博客</Link>
+          </MenuItem>
+          <MenuItem onTouchTap={this.handleClose.bind(this)}>
+            <Link to="about" style={styles.link} activeStyle={{color: '#E91E63'}}>关于</Link>
+          </MenuItem>
         </div>
         </Drawer>
       </div>

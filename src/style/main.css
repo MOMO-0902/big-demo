@@ -1,0 +1,63 @@
+.content{
+  width:70%;
+  position:relative;
+  left:15%;
+}
+.userInfo{
+  position:relative;
+  height:500px;
+}
+.userInfo img{
+  position:absolute;
+  left:40%;
+  top:10%;
+  border-radius:50%;
+  display: block;
+
+}
+.userInfo ul{
+  width:80%;
+  position:absolute;
+  top:60%;
+  left:10%;
+  justify-content: center;
+  padding-bottom:5%;
+  border-bottom:1px solid #ccc;
+}
+.userInfo ul li{
+  width:33%;
+  line-height:40px;
+  font-size: 15px;
+  float: left;
+  text-align:center;
+  list-style-type: none;
+  border-right:1px solid #ccc;
+}
+.userInfo ul li:last-child{
+  border-right:none;
+}
+user-repos {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+ .user-repos  li {
+  list-style:none;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+ .user-repos  li  div {
+  display: flex;
+  justify-content: space-between;
+  padding-right:6%;
+}
+ .user-repos li .name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #00bcd4;
+}
+ .user-repos li  .desc {
+  font-size: 15px;
+}
+ .user-repos li  .lang {
+  font-size: 14px;
+}

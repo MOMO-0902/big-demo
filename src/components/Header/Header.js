@@ -1,12 +1,14 @@
 import React from 'react';
 import Icons from './Icon';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import Hamburger from './Hamburger';
 
+
+import {cyan500} from 'material-ui/styles/colors';
 class Header extends React.Component {
    getChildContext() {
    return {muiTheme: getMuiTheme()};
    }
+   
   render(){
     let styles={
       root:{
@@ -14,7 +16,11 @@ class Header extends React.Component {
         height:'300px',
         position:'relative',
       },
-    
+      color:{
+        backgroundColor:'#2196F3',
+        boxShadow:'none'
+      }
+
 
 
     }
@@ -22,8 +28,8 @@ class Header extends React.Component {
       <div style={styles.root}>
 
         <Icons />
-        <Hamburger />
 
+      {this.props.children}
       </div>
     )
   }

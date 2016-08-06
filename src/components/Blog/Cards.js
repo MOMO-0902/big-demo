@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import CardList from './CardList.js';
+import Header from '../Header/Header.js';
+import Footer from '../Footer/Footer.js';
 import map from 'lodash/fp/map';
 let Cards = [
   {index: '1', title:'这是第一天',date:'2016.7.19'},
@@ -23,7 +25,9 @@ class Card extends Component {
 
     return(
       <div>
+        <Header />
         {AllCards}
+        <Footer />
       </div>
     )
   }

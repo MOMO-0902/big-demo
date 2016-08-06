@@ -7,11 +7,14 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
+    {
+        test: /\.jsx?$/,
+        loaders: ['babel'],
+        include: path.join(__dirname, 'src')
+      },
       {
-        test: /\.js$/,
-        loader: 'babel-loader'
+        test: /\.css$/,
+        loaders: ['style', 'css']
       }
-    ]
   }
 };

@@ -1,24 +1,40 @@
 import React from 'react';
+import { Link } from 'react-router';
 
-import Header from './components/Header.js';
-import Footer from './components/Footer.js';
 
-import Cards from './components/Cards.js';
-import Home from './components/Home.js'
-
+import Cards from './components/Blog/Cards.js';
+import NavBar from './components/Header/NavBar.js'
+import AppBar from 'material-ui/AppBar';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 class App extends React.Component {
+  getChildContext() {
+  return {muiTheme: getMuiTheme()};
+  }
+  handelOpen(){
+    this.refs.navbar.handleToggle();
+  }
   render(){
-
+    let styles={
+      color:{
+        backgroundColor:'rgba(0,0,0,0)',
+        boxShadow:'none'
+      }
+    }
     return(
       <div>
-        <Header />
+      <div style={{position:'absolute'}}>
+      <AppBar title="首页"
+              onLeftIconButtonTouchTap={this.handelOpen.bind(this)}
+              style={styles.color}/>
+     <NavBar ref='navbar'/>
+    </div>
+        {this.props.children}
 
-        <Home />
-        <Cards />
-        <Footer />
     </div>
     )
   }
 }
-
+App.childContextTypes = {
+  muiTheme: React.PropTypes.object.isRequired,
+};
 export default App;
