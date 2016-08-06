@@ -1,5 +1,5 @@
 {
-  "name": "004-webpack-babel",
+  "name": "big-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,11 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer-loader": "^3.1.0",
-    "axios": "^0.8.1",
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
-    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
@@ -29,8 +26,12 @@
     "webpack-hot-middleware": "^2.12.1"
   },
   "dependencies": {
+    "axios": "^0.13.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "inline-style-prefixer": "^2.0.1",
     "lodash": "^4.14.0",
     "material-ui": "^0.15.2",
+    "react-router": "^2.6.1",
     "react-tap-event-plugin": "^1.0.0"
   }
 }
