@@ -8,7 +8,7 @@ class Header extends React.Component {
    getChildContext() {
    return {muiTheme: getMuiTheme()};
    }
-   
+
   render(){
     let styles={
       root:{

@@ -45,7 +45,8 @@ const SvgIconExampleIcons = () => (
             underlineFocusStyle={styles.underlineStyle}
             hintStyle={styles.hintStyle}
             inputStyle={styles.inputStyle}
-            style={styles.text} />
+            style={styles.text}
+          />
   </div>
 );
 
