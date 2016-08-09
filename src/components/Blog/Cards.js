@@ -58,7 +58,7 @@ class Card extends Component {
     return(
       <div>
         <Header />
-        { this.state.wait ? <div style={styles.circle}><CircularProgress />size={1.5} /></div> : ''}
+        { this.state.wait ? <div style={styles.circle}><CircularProgress size={1.5} /></div> : ''}
         {AllCards}
         <Footer />
       </div>
