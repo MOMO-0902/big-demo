@@ -104,3 +104,22 @@ sudo rcnscd restart
 #### 使用谷歌
 
 #### Icon-button
+
+#### 路由推送（CardList)
+
+```
+1.import {hashHistory} from 'react-router';
+
+  handleClick(){
+      hashHistory.push(`blog/${this.props.url}`);
+  }
+  2.
+  CardList.contextTypes ={
+    router:React.PropTypes.object
+  }
+  handleClick(){
+    console.log(this.context.router)
+    this.context.router.push(`blog/${this.props.url}`);
+  }
+
+```

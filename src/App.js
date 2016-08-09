@@ -23,7 +23,7 @@ class App extends React.Component {
     return(
       <div>
       <div style={{position:'absolute'}}>
-      <AppBar title="首页"
+      <AppBar 
               onLeftIconButtonTouchTap={this.handelOpen.bind(this)}
               style={styles.color}/>
      <NavBar ref='navbar'/>

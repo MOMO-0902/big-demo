@@ -10,7 +10,7 @@ class Post extends Component {
     }
   }
   componentDidMount(){
-    console.log(this.props.params.title)
+
     // use math random to avoid browser cache
     let mdname=this.props.params.title;
     let address = `https://raw.githubusercontent.com/MOMO-0902/big-demo/master/posts/${mdname}.md?v=${Math.random()}`

@@ -3,7 +3,8 @@ import {hashHistory} from 'react-router';
 
 class CardList extends Component{
   handleClick(){
-    hashHistory.push(`blog/${this.props.url}`);
+    console.log(this.context.router)
+    this.context.router.push(`blog/${this.props.url}`);
   }
 
    render(){
@@ -12,6 +13,7 @@ class CardList extends Component{
          width:'80%',
          height:'100px',
          margin:'10px auto',
+         cursor:'pointer',
          position:'relative',
          boxShadow:'1px 3px 5px rgba(0, 0, 0, 0.16),2px 5px 10px rgba(0,0,0,0.12)'
        },
@@ -60,4 +62,7 @@ CardList.defaultProps = {
   index: 1,
   date: '2016.7.19',
 };
+CardList.contextTypes ={
+  router:React.PropTypes.object
+}
 export default CardList;

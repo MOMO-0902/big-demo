@@ -7,7 +7,10 @@ export default class DrawerUndockedExample extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {open: false};//页面点进来时nabar默认为关闭状态，如果为true,就是开启状态
+    this.state = {
+      open: false,
+      title:''
+    };//页面点进来时nabar默认为关闭状态，如果为true,就是开启状态
   }
 
   handleToggle(){
@@ -16,6 +19,19 @@ export default class DrawerUndockedExample extends React.Component {
 
   handleClose() {
     this.setState({open: false});//navbar 关闭状态
+  }
+  componentWillReceiveProps() {
+    this.setNavState();
+  }
+  componentDidMount(){
+    this.setNavState();
+  }
+  setNavState(){
+    this.setState({
+      title:this.context.router.isActive('/', true) ? 'HOME' :
+        this.context.router.isActive('/blog')? 'BLOG' :
+        this.context.router.isActive('/about')? 'ABOUT' : 'HOME'
+    });
   }
 
   render() {
@@ -81,7 +97,7 @@ export default class DrawerUndockedExample extends React.Component {
         >
           <p style={styles.h1}>好多视频网</p>
         <div style={styles.menu}>
-        <p style={styles.navTitle} onClick={this.handleClose.bind(this)}>MOMO-0902{this.state.title}</p>
+        <p style={styles.navTitle} onClick={this.handleClose.bind(this)}>{this.state.title}</p>
           <MenuItem onTouchTap={this.handleClose.bind(this)}>
             <Link to="/" style={styles.link} activeStyle={{color: '#E91E63'}} onlyActiveOnIndex={true}>首页</Link>
           </MenuItem>
@@ -96,4 +112,7 @@ export default class DrawerUndockedExample extends React.Component {
       </div>
     );
   }
+}
+DrawerUndockedExample.contextTypes = {
+  router: React.PropTypes.object.isRequired
 }
