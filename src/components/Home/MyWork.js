@@ -8,28 +8,28 @@ class MyWork extends React.Component{
         <Card className="card">
           <CardMedia
             overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}>
-          <img src="https://github.com/MOMO-0902/big-demo/blob/master/src/source/Se828bc42-658b-44f0-9074-8d27a12c81c7.jpg?raw=true" />
+          <img src="https://github.com/MOMO-0902/big-demo/blob/master/src/source/friends.jpg?raw=true" />
           </CardMedia>
         </Card>
 
         <Card className="card">
           <CardMedia
             overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}>
-          <img src="https://github.com/MOMO-0902/big-demo/blob/master/src/source/Se828bc42-658b-44f0-9074-8d27a12c81c7.jpg?raw=true" />
+          <img src="https://github.com/MOMO-0902/big-demo/blob/master/src/source/ben2.jpg?raw=true" />
           </CardMedia>
         </Card>
 
         <Card className="card">
           <CardMedia
             overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}>
-          <img src="https://github.com/MOMO-0902/big-demo/blob/master/src/source/Se828bc42-658b-44f0-9074-8d27a12c81c7.jpg?raw=true" />
+          <img src="https://github.com/MOMO-0902/big-demo/blob/master/src/source/timg1.jpg?raw=true" />
           </CardMedia>
         </Card>
 
         <Card className="card">
           <CardMedia
             overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}>
-          <img src="https://github.com/MOMO-0902/big-demo/blob/master/src/source/Se828bc42-658b-44f0-9074-8d27a12c81c7.jpg?raw=true" />
+          <img src="https://github.com/MOMO-0902/big-demo/blob/master/src/source/kaihui.jpg?raw=true" />
           </CardMedia>
         </Card>
     </div>
