@@ -23,17 +23,5 @@
     "name": "all-tips",
     "title": "big-demo early tips",
     "created_at": "2016年8月6日"
-  },
-  {
-    "id": 5,
-    "name": "react-router",
-    "title": "Use React Router",
-    "created_at": "2016年8月6日"
-  },
-  {
-    "id": 6,
-    "name": "react-router",
-    "title": "Use React Router",
-    "created_at": "2016年8月6日"
   }
 ]
