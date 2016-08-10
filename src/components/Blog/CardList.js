@@ -18,7 +18,7 @@ class CardList extends Component{
          boxShadow:'1px 3px 5px rgba(0, 0, 0, 0.16),2px 5px 10px rgba(0,0,0,0.12)'
        },
        index:{
-         backgroundColor:'#00bcd4',
+         backgroundColor:'rgba(33,150,243,0.95)',
          color:'#fff',
          width:'11%',
          textAlign:'center',
@@ -28,11 +28,12 @@ class CardList extends Component{
        },
        h2:{
          position:'absolute',
-         top:'15px',
+         top:'18px',
          left:'40px'
        },
        content:{
-         paddingLeft:'10px',
+         paddingLeft:'20px',
+         paddingTop:'10px',
          color:'#777',
          float:'left',
        }
@@ -45,7 +46,7 @@ class CardList extends Component{
           <h2 style={styles.h2}>{this.props.index}</h2>
         </div>
         <div style={styles.content}>
-          <h3>{this.props.title}</h3>
+          <h3>{this.props.title}</h3><br/>
           <p>{this.props.date}</p>
         </div>
        </div>

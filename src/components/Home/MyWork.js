@@ -32,6 +32,20 @@ class MyWork extends React.Component{
           <img src="https://github.com/MOMO-0902/big-demo/blob/master/src/source/kaihui.jpg?raw=true" />
           </CardMedia>
         </Card>
+
+        <Card className="card">
+          <CardMedia
+            overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}>
+          <img src="https://github.com/MOMO-0902/big-demo/blob/master/src/source/girlben.jpg?raw=true" />
+          </CardMedia>
+        </Card>
+
+        <Card className="card">
+          <CardMedia
+            overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}>
+          <img src="https://github.com/MOMO-0902/big-demo/blob/master/src/source/sofaben.jpg?raw=true" />
+          </CardMedia>
+        </Card>
     </div>
     )
 

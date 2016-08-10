@@ -19,7 +19,7 @@ class SvgIconExampleIcons extends React.Component {
 render () {
     let styles={
       root:{
-        backgroundColor:'#2196F3',
+        backgroundColor:'rgba(33,150,243,0.9)',
         height:'300px',
         position:'relative',
       },

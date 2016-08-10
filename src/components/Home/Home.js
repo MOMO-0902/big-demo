@@ -34,7 +34,7 @@ class Home extends React.Component {
        </div>
        <h1 style={{color:'#777',textAlign:'center',lineHeight:'90px'}}>我的个人作品</h1>
        <MyWork />
-
+       
      </div>
     )
   }

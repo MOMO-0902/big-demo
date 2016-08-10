@@ -45,7 +45,7 @@ export default class DrawerUndockedExample extends React.Component {
         marginTop:0,
         color:"#fff",
         height:'60px',
-        backgroundColor:'#2196F3',
+        backgroundColor:'rgba(30,144,255,0.7)',
         fontSize:'30px',
         margin:'0 atuo',
         lineHeight:'60px',
@@ -54,7 +54,7 @@ export default class DrawerUndockedExample extends React.Component {
       menu:{
         color:"#ooo",
 
-        backgroundColor:'#E040',
+        backgroundColor:'rgba(30,144,255,0.7)',
         fontSize:'30px',
         textAlign:'center',
         lineHeight:'50px'
@@ -81,7 +81,7 @@ export default class DrawerUndockedExample extends React.Component {
         color:'#fff',
         lineHeight:'75px',
         fontSize:'20px',
-        backgroundColor:'#00BCD4',
+        backgroundColor:'rgba(30,144,255,0.8)',
         marginBottom:'10px',
         marginTop: '0'
       }
@@ -95,7 +95,7 @@ export default class DrawerUndockedExample extends React.Component {
           open={this.state.open}
           onRequestChange={(open) => this.setState({open})}
         >
-          <p style={styles.h1}>好多视频网</p>
+          <div style={styles.h1}><img src="https://github.com/MOMO-0902/big-demo/blob/master/src/source/huabian.png?raw=true" /></div>
         <div style={styles.menu}>
         <p style={styles.navTitle} onClick={this.handleClose.bind(this)}>{this.state.title}</p>
           <MenuItem onTouchTap={this.handleClose.bind(this)}>
