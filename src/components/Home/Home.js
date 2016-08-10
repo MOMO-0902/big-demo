@@ -1,10 +1,11 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes } from 'react';
+import MyWork from './MyWork.js';
 
 class Home extends React.Component {
   render () {
     let styles={
       root:{
-        width:'100vw',
+        width:'100%',
         height:'100vh',
         background: 'url("https://github.com/MOMO-0902/big-demo/blob/master/src/source/timg.jpg?raw=true") no-repeat fixed center center/cover'
       },
@@ -32,6 +33,8 @@ class Home extends React.Component {
          </div>
        </div>
        <h1 style={{color:'#777',textAlign:'center',lineHeight:'90px'}}>我的个人作品</h1>
+       <MyWork />
+
      </div>
     )
   }

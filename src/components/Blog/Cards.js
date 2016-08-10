@@ -6,6 +6,11 @@ import Footer from '../Footer/Footer.js';
 import map from 'lodash/fp/map';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import CircularProgress from 'material-ui/CircularProgress';
+import Icons from './Icon';
+
+
+
+
 // let Cards = [
 //   {index: '1', title:'这是第一天',date:'2016.7.19'},
 //   {index: '2', title:'这是第二天',date:'2016.7.21'},
@@ -47,20 +52,36 @@ class Card extends Component {
      }
 }
     var AllCards = [];
-    map((b) => {
-      AllCards.push(
-          <CardList title={b.title} date={b.created_at } index={b.id} url={b.name} key={Math.random()}/>
-        );
-    },
-     this.state.posts
-  );
+    if(this.props.pipei == ""){
+        // map((b) => {
+        //   AllCards.push(
+        //       <CardList title={b.title} date={b.created_at } index={b.id} url={b.name} key={Math.random()}/>)
+        //     }
+        for(let i = this.state.posts.length -1 ; i >=0 ; i--){
+            AllCards.push(
+              <CardList index={this.state.posts[i].id}
+                        title={this.state.posts[i].title}
+                        date={this.state.posts[i].date}
+                        key={Math.random()}
+                />)
+          }
+      }else{
+        for (var i = 0; i < this.state.posts.length; i++) {
+        let posts = this.state.posts[i];
+        if (posts.title.indexOf(this.props.pipei)!= -1 || posts.id == this.props.pipei) {
+           AllCards.push(<CardList title={this.state.posts[i].title} date={this.state.posts[i].date} index={this.state.posts[i].id} key={Math.random()}/>)
+        }
+      }
+    }
+
 
     return(
       <div>
-        <Header />
+
+
         { this.state.wait ? <div style={styles.circle}><CircularProgress size={1.5} /></div> : ''}
         {AllCards}
-        <Footer />
+
       </div>
     )
   }

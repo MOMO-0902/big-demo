@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
-
-
+import Header from './components/Header/Header.js';
+import Footer from './components/Footer/Footer.js';
 import Cards from './components/Blog/Cards.js';
 import NavBar from './components/Header/NavBar.js'
 import AppBar from 'material-ui/AppBar';
@@ -23,13 +23,14 @@ class App extends React.Component {
     return(
       <div>
       <div style={{position:'absolute'}}>
-      <AppBar 
+      <AppBar
               onLeftIconButtonTouchTap={this.handelOpen.bind(this)}
               style={styles.color}/>
      <NavBar ref='navbar'/>
     </div>
-        {this.props.children}
 
+        {this.props.children}
+        <Footer />
     </div>
     )
   }

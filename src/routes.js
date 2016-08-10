@@ -4,7 +4,7 @@ import { Route, IndexRoute } from 'react-router';
 import App from './App.js';
 import Home from './components/Home/Home.js';
 
-import Blog from './components/Blog/Cards.js';
+import Blog from './components/Blog/Blog.js';
 import About from './components/About/About.js';
 import Post from './components/Blog/Post';
 export default (
