@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Icon from './Icon.js';
+import Search from './Search.js';
 class Blog extends Component{
 
   render(){
     return(
-       <Icon />
+       <Search />
     )
   }
 }

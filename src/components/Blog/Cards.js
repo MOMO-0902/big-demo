@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import CardList from './CardList.js';
-import Header from '../Header/Header.js';
-import Footer from '../Footer/Footer.js';
 import map from 'lodash/fp/map';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import CircularProgress from 'material-ui/CircularProgress';
-import Icons from './Icon';
+import Search from './Search';
 
 
 

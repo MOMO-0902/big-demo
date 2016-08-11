@@ -37,7 +37,7 @@ class Account extends React.Component {
 
     let x = <div>
               <h1>正在向github读取数据</h1>
-              <CircularProgress />;
+              <CircularProgress />
              </div>
     let z = <div>
               <div className="userInfo">

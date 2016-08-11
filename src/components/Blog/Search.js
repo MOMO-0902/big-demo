@@ -3,7 +3,7 @@ import ActionSearch from 'material-ui/svg-icons/action/search';
 import TextField from 'material-ui/TextField';
 import {white} from 'material-ui/styles/colors';
 import Cards from'./Cards.js'
-class SvgIconExampleIcons extends React.Component {
+class Search extends React.Component {
   constructor(){
     super();
     this.state={
@@ -75,4 +75,4 @@ return (
 )};
 }
 
-export default SvgIconExampleIcons;
+export default Search;

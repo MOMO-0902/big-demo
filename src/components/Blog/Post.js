@@ -32,7 +32,7 @@ class Post extends Component {
     });
     let content = marked(this.state.rawContent!='' ? this.state.rawContent : '请稍等......' );
     return(
-      <div>
+      <div style={{backgroundColor:'rgba(30,144,255,0.3)'}}>
         <div className="post-content">
           <span dangerouslySetInnerHTML={{__html: content}} />
         </div>

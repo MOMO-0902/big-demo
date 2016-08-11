@@ -41,15 +41,14 @@ export default class DrawerUndockedExample extends React.Component {
         width:'300px'
       },
       h1:{
-        paddingTop:0,
-        marginTop:0,
-        color:"#fff",
+
+
         height:'60px',
         backgroundColor:'rgba(30,144,255,0.7)',
-        fontSize:'30px',
-        margin:'0 atuo',
-        lineHeight:'60px',
-        textAlign:'center',
+
+
+
+
       },
       img:{
         width:'100%'
@@ -87,13 +86,15 @@ export default class DrawerUndockedExample extends React.Component {
         backgroundColor:'rgba(30,144,255,0.8)',
         marginBottom:'10px',
         marginTop: '0'
-      }
+      },
+
 
     }
     return (
       <div>
         <Drawer
           docked={false}
+
           width={200}
           open={this.state.open}
           onRequestChange={(open) => this.setState({open})}
