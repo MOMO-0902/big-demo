@@ -3,7 +3,6 @@ import {hashHistory} from 'react-router';
 
 class CardList extends Component{
   handleClick(){
-    console.log(this.context.router)
     this.context.router.push(`blog/${this.props.url}`);
   }
 

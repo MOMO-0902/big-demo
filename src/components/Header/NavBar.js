@@ -51,6 +51,9 @@ export default class DrawerUndockedExample extends React.Component {
         lineHeight:'60px',
         textAlign:'center',
       },
+      img:{
+        width:'100%'
+      },
       menu:{
         color:"#ooo",
 
@@ -95,7 +98,7 @@ export default class DrawerUndockedExample extends React.Component {
           open={this.state.open}
           onRequestChange={(open) => this.setState({open})}
         >
-          <div style={styles.h1}><img src="https://github.com/MOMO-0902/big-demo/blob/master/src/source/huabian.png?raw=true" /></div>
+          <div style={styles.h1}><img style={styles.img} src="https://github.com/MOMO-0902/big-demo/blob/master/src/source/huabian.png?raw=true" /></div>
         <div style={styles.menu}>
         <p style={styles.navTitle} onClick={this.handleClose.bind(this)}>{this.state.title}</p>
           <MenuItem onTouchTap={this.handleClose.bind(this)}>

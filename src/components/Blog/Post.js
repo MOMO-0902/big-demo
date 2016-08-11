@@ -13,15 +13,18 @@ class Post extends Component {
 
     // use math random to avoid browser cache
     let mdname=this.props.params.title;
+    console.log(mdname);
     let address = `https://raw.githubusercontent.com/MOMO-0902/big-demo/master/posts/${mdname}.md?v=${Math.random()}`
     axios.get(address).then((res) => {
       this.setState({
         rawContent: res.data
       });
+
     });
   }
 
   render(){
+    console.log(this.props.params.title);
     marked.setOptions({
        highlight: function (code) {
         return hljs.highlightAuto(code).value;

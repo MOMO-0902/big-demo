@@ -35,7 +35,7 @@ class Card extends Component {
     //use Math.random to avoid browser cache
     axios.get(`https://raw.githubusercontent.com/MOMO-0902/big-demo/master/posts/index.json?v=${Math.random()}`)
          .then((arr) => {
-            console.log(arr);
+            // console.log(arr);
             this.setState({
               posts:arr.data,
               wait:false
@@ -62,6 +62,7 @@ class Card extends Component {
               <CardList index={this.state.posts[i].id}
                         title={this.state.posts[i].title}
                         date={this.state.posts[i].date}
+                        url={this.state.posts[i].name}
                         key={Math.random()}
                 />)
           }
@@ -69,7 +70,7 @@ class Card extends Component {
         for (var i = 0; i < this.state.posts.length; i++) {
         let posts = this.state.posts[i];
         if (posts.title.indexOf(this.props.pipei)!= -1 || posts.id == this.props.pipei) {
-           AllCards.push(<CardList title={this.state.posts[i].title} date={this.state.posts[i].date} index={this.state.posts[i].id} key={Math.random()}/>)
+           AllCards.push(<CardList title={this.state.posts[i].title} url={this.state.posts[i].name} date={this.state.posts[i].date} index={this.state.posts[i].id} key={Math.random()}/>)
         }
       }
     }
