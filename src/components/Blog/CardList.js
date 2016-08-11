@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {hashHistory} from 'react-router';
+import {browserHistory} from 'react-router';
 
 class CardList extends Component{
   handleClick(){
