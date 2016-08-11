@@ -2,7 +2,7 @@ import React from 'react';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 class Header extends React.Component {
-  
+
    getChildContext() {
    return {muiTheme: getMuiTheme()};
    }

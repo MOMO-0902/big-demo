@@ -29,12 +29,12 @@ class Home extends React.Component {
       <div>
        <div style={styles.root}>
          <div style={styles.cover}>
-           <h1 style={styles.title}>欢迎光临<br/><span style={styles.span}>MOMO CORNER</span></h1>
+           <h1 style={styles.title}>欢迎光临haha<br/><span style={styles.span}>MOMO CORNER</span></h1>
          </div>
        </div>
        <h1 style={{color:'#777',textAlign:'center',lineHeight:'90px'}}>我的个人作品</h1>
        <MyWork />
-       
+
      </div>
     )
   }
